@@ -22,6 +22,9 @@ class ItemController extends Controller
         $query = Item::with(['brand', 'type']);
 
         return DataTables::of($query)
+            ->editColumn('thumbnail', function ($item) {
+                return '<img src="'. $item->thumbnail .'" alt="Thumbnail" class="w-20 mx-auto rounded-md">';
+            })
             ->addColumn('action', function ($item) {
                 return '
                     <a class="block w-full px-2 py-1 mb-1 text-xs text-center text-white transition duration-500 bg-gray-700 border border-gray-700 rounded-md select-none ease hover:bg-gray-800 focus:outline-none focus:shadow-outline"
@@ -35,7 +38,7 @@ class ItemController extends Controller
                         ' . method_field('delete') . csrf_field() . '
                     </form>';
             })
-            ->rawColumns(['action'])
+            ->rawColumns(['action', 'thumbnail'])
             ->make();
     }
 
@@ -91,9 +94,15 @@ class ItemController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Item $item)
     {
-        //
+        $item->load('brand', 'type');
+
+        $brands = Brand::all();
+        $types = Type::all();
+
+        return view('admin.items.edit', compact('item', 'brands', 'types'));
+
     }
 
     /**
@@ -107,8 +116,10 @@ class ItemController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Item $item)
     {
-        //
+        $item->delete();
+
+        return redirect()->route('admin.items.index');
     }
 }
