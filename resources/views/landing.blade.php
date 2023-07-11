@@ -10,11 +10,11 @@
               NEW
             </div>
             <div data-aos="fade-left" data-aos-delay="600">
-              PORSCHE
+              FORTUNER
             </div>
           </div>
         </div>
-        <img src="/images/porsche.webp" class="w-full max-w-[963px] z-10 relative" alt="" data-aos="zoom-in"
+        <img src="/images/fortuner.png" class="w-full max-w-[963px] z-10 relative" alt="" data-aos="zoom-in"
              data-aos-delay="950">
       </div>
 
@@ -61,7 +61,7 @@
         <div class="p-1 rounded-full bg-primary group" data-aos="zoom-in" data-aos-delay="3400">
           <a href="#popularCars" class="btn-primary">
             <p class="transition-all duration-[320ms] translate-x-3 group-hover:-translate-x-1">
-              Rent Now
+              Sewa Sekarang
             </p>
             <img src="/svgs/ic-arrow-right.svg"
                  class="opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-[320ms]"
@@ -77,9 +77,9 @@
     <div class="container relative py-[100px]">
       <header class="mb-[30px]">
         <h2 class="font-bold text-dark text-[26px] mb-1">
-          Popular Cars
+          Mobil Terpopuler
         </h2>
-        <p class="text-base text-secondary">Start your big day</p>
+        <p class="text-base text-secondary">Mulai Sekarang!</p>
       </header>
 
       <!-- Cars -->
@@ -100,7 +100,7 @@
             <div class="flex items-center justify-between gap-1">
               <!-- Price -->
               <p class="text-sm font-normal text-secondary">
-                <span class="text-base font-bold text-primary">Rp.{{ $item->price }}</span>/day
+                <span class="text-base font-bold text-primary">Rp.{{ $item->price }}</span>/hari
               </p>
               <!-- Rating -->
               <p class="text-dark text-xs font-semibold flex items-center gap-[2px]">
@@ -110,6 +110,18 @@
             </div>
           </div>
         @endforeach
+      </div>
+      <div class="flex items-center justify-center mt-12">
+          <div class="p-1 rounded-full bg-primary group w-max">
+              <a href="#popularCars" class="btn-primary">
+              <p class="transition-all duration-[320ms] translate-x-3 group-hover:-translate-x-1">
+                Lebih Banyak
+              </p>
+              <img src="/svgs/ic-arrow-right.svg"
+                   class="opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-[320ms]"
+                   alt="">
+              </a>
+          </div>
       </div>
     </div>
   </section>
@@ -176,9 +188,9 @@
         <div class="mt-[50px]">
           <!-- Button Primary -->
           <div class="p-1 rounded-full bg-primary group">
-            <a href="#!" class="btn-primary">
+            <a href="{{ route('front.catalog') }}" class="btn-primary">
               <p class="transition-all duration-[320ms] translate-x-3 group-hover:-translate-x-10 text-center">
-                Explore Cars
+                Cari Mobil
               </p>
               <img src="/svgs/ic-arrow-right.svg"
                    class="transition-all duration-[320ms] opacity-0 group-hover:opacity-100 group-hover:translate-x-10"
@@ -194,9 +206,9 @@
   <section class="container relative py-[100px]">
     <header class="text-center mb-[50px]">
       <h2 class="font-bold text-dark text-[26px] mb-1">
-        Frequently Asked Questions
+        Pertanyaan Terpopuler
       </h2>
-      <p class="text-base text-secondary">Learn more about Vrom and get a success</p>
+      <p class="text-base text-secondary">Pelajari Selengkapnya!</p>
     </header>
 
     <!-- Questions -->
@@ -316,7 +328,7 @@
         <div class="p-1 rounded-full bg-primary group w-max">
           <a href="#popularCars" class="btn-primary">
             <p class="transition-all duration-[320ms] translate-x-3 group-hover:-translate-x-1">
-              Book Now
+              Pesan Sekarang
             </p>
             <img src="/svgs/ic-arrow-right.svg"
                  class="opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-[320ms]"
@@ -325,14 +337,14 @@
         </div>
       </div>
       <div class="absolute bottom-[-30px] right-0 lg:w-[764px] max-h-[332px] hidden lg:block">
-        <img src="/images/porsche_small.webp" alt="">
+        <img src="/images/fortuners.png" alt="">
       </div>
     </div>
   </section>
 
   <footer class="py-10 md:pt-[100px] md:pb-[70px] container">
     <p class="text-base text-center text-secondary">
-      All Rights Reserved. Copyright BuildWith Angga 2023.
+      2023 Copyright SetiaAbadi | Created by Farino Joshua
     </p>
   </footer>
 </x-front-layout>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Front;
 
+use Carbon\Carbon;
 use App\Models\Booking;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -18,7 +19,7 @@ class BookingsController extends Controller
 
             // Lakukan operasi lain dengan $bookings
             return view('bookings', [
-                'bookings' => $bookings
+                'bookings' => $bookings,
             ]);
         } else {
            return view('auth.login');

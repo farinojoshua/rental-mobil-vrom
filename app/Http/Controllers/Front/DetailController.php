@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Front;
 
 use App\Models\Item;
+use App\Models\Type;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -13,13 +14,16 @@ class DetailController extends Controller
     {
         $item = Item::with(['type', 'brand'])->whereSlug($slug)->firstOrFail();
         $similiarItems = Item::with(['type', 'brand'])
-            // ->where('type_id', $item->type_id)
-            ->where('id', '!=', $item->id)
-            ->get();
+        // ->where('type_id', $item->type_id)
+        ->where('id', '!=', $item->id)
+        ->get();
+        $itemtype = $item->type_id;
+        $type = Type::where('id', $itemtype)->firstOrFail();
 
         return view('detail', [
             'item' => $item,
-            'similiarItems' => $similiarItems
+            'similiarItems' => $similiarItems,
+            'type' => $type,
         ]);
     }
 }

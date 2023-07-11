@@ -10,7 +10,7 @@
       </header>
 
       <!-- Cars -->
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-[29px] mb-5">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-[29px] mb-10">
            <div class="card-popular">
             <div>
               <h5 class="text-lg text-dark font-bold mb-[2px]">
@@ -175,7 +175,7 @@
 
   <footer class="py-10 md:pt-[100px] md:pb-[70px] container">
     <p class="text-base text-center text-secondary">
-      All Rights Reserved. Copyright BuildWith Angga 2023.
+     2023 Copyright SetiaAbadi | Created by Farino Joshua
     </p>
   </footer>
 </x-front-layout>

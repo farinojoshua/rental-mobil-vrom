@@ -10,8 +10,8 @@
         </li>
         <li
             class="text-secondary font-normal text-base capitalize after:content-['/'] last:after:content-none inline-flex gap-5">
-          <a href="#!">
-            {{ $item->brand->name }}
+          <a href="{{ route('front.catalog.detail', $type->slug) }}">
+            {{ $item->type->name }}
           </a>
         </li>
         <li

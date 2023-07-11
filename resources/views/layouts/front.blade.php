@@ -50,13 +50,17 @@
         <div class="hidden w-full lg:block" id="navigation">
           <div class="flex flex-col items-baseline gap-4 mt-6 lg:justify-between lg:flex-row lg:items-center lg:mt-0">
             <div class="flex flex-col w-full ml-auto lg:w-auto gap-4 lg:gap-[50px] lg:items-center lg:flex-row">
-              <a href="{{ route("front.index") }}" class="nav-link-item">Landing</a>
-              <a href="{{ route("front.catalog") }}" class="nav-link-item">Catalog</a>
-              <a href="#!" class="nav-link-item">Benefits</a>
+              <a href="{{ route("front.index") }}" class="nav-link-item">Home</a>
+              <a href="{{ route("front.catalog") }}" class="nav-link-item">Katalog</a>
+              <a href="{{ route("front.howto") }}" class="nav-link-item">Cara Penyewaan</a>
               @auth
-              <a href="{{ route("front.bookings") }}" class="nav-link-item">Bookings</a>
+              <a href="{{ route("front.bookings") }}" class="nav-link-item">Riwayat Pemesanan</a>
               @endauth
+              @admin
+              <a href="{{ route("admin.dashboard") }}" class="nav-link-item">Admin</a>
+              @endadmin
             </div>
+
             @auth
               <div class="flex flex-col w-full ml-auto lg:w-auto lg:gap-12 lg:items-center lg:flex-row">
                 {{-- Logout --}}

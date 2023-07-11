@@ -10,6 +10,7 @@ use App\Http\Controllers\Front\DetailController;
 use App\Http\Controllers\Front\CheckoutController;
 use App\Http\Controllers\Front\PaymentController;
 use App\Http\Controllers\Front\CatalogController;
+use App\Http\Controllers\Front\HowToController;
 use App\Http\Controllers\Front\BookingsController;
 
 use Illuminate\Support\Facades\Route;
@@ -29,6 +30,7 @@ Route::name('front.')->group(function () {
     Route::get('/', [LandingController::class, 'index'])->name('index');
     Route::get('/catalog', [CatalogController::class, 'index'])->name('catalog');
     Route::get('/catalog/{slug}', [CatalogController::class, 'type'])->name('catalog.detail');
+    Route::get('/howto', [HowToController::class, 'index'])->name('howto');
     Route::get('/bookings', [BookingsController::class, 'index'])->name('bookings');
     Route::get('/detail/{slug}', [DetailController::class, 'index'])->name('detail');
 
