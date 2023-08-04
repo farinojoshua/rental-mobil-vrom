@@ -80,17 +80,6 @@
                 Payment Method
               </h5>
               <div class="grid md:grid-cols-2 gap-4 md:gap-[30px] items-center">
-                <div class="relative boxPayment opacity-30">
-                  <input type="radio" value="mastercard" name="payment_method" id="mastercard"
-                         class="absolute inset-0 z-50 opacity-0 cursor-pointer" disabled>
-                  <label for="mastercard"
-                         class="flex items-center justify-center gap-4 border border-grey rounded-[20px] p-5 min-h-[80px]">
-                    <img src="/svgs/logo-mastercard.svg" alt="">
-                    <p class="text-base font-semibold">
-                      MasterCard
-                    </p>
-                  </label>
-                </div>
                 <div class="relative boxPayment">
                   <input type="radio" value="midtrans" name="payment_method" id="midtrans"
                          class="absolute inset-0 z-50 opacity-0 cursor-pointer">

@@ -32,4 +32,5 @@ class CatalogController extends Controller
             'types' => $types,
         ]);
     }
+
 }

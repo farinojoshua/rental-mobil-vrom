@@ -52,7 +52,7 @@
             <div class="flex flex-col w-full ml-auto lg:w-auto gap-4 lg:gap-[50px] lg:items-center lg:flex-row">
               <a href="{{ route("front.index") }}" class="nav-link-item">Home</a>
               <a href="{{ route("front.catalog") }}" class="nav-link-item">Katalog</a>
-              <a href="{{ route("front.howto") }}" class="nav-link-item">Cara Penyewaan</a>
+              <a href="{{ route("front.howto") }}" class="nav-link-item">Cara Sewa</a>
               @auth
               <a href="{{ route("front.bookings") }}" class="nav-link-item">Riwayat Pemesanan</a>
               @endauth
@@ -69,17 +69,17 @@
                   <a href="{{ route('logout') }}" class="btn-secondary"
                      onclick="event.preventDefault();
                   this.closest('form').submit();">
-                    Log Out
+                    Keluar
                   </a>
                 </form>
               </div>
             @else
               <div class="flex flex-col w-full ml-auto lg:w-auto lg:gap-12 lg:items-center lg:flex-row">
                 <a href="{{ route('register') }}" class="btn-secondary">
-                  Register
+                  Daftar
                 </a>
                 <a href="{{ route('login') }}" class="btn-secondary">
-                  Log In
+                  Masuk
                 </a>
               </div>
             @endauth

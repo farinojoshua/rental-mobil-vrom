@@ -17,6 +17,12 @@ class BookingsController extends Controller
             // Gunakan $user_id untuk mengambil data booking berdasarkan user_id
             $bookings = Booking::where('user_id', $user_id)->get();
 
+            // Menghilangkan jam pada format tanggal di bookings
+            foreach ($bookings as $booking) {
+                $booking->date = Carbon::parse($booking->date)->format('d-m-Y');
+            }
+
+
             // Lakukan operasi lain dengan $bookings
             return view('bookings', [
                 'bookings' => $bookings,

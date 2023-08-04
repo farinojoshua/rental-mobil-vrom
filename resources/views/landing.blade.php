@@ -113,7 +113,7 @@
       </div>
       <div class="flex items-center justify-center mt-12">
           <div class="p-1 rounded-full bg-primary group w-max">
-              <a href="#popularCars" class="btn-primary">
+              <a href="{{ route('front.catalog') }}" class="btn-primary">
               <p class="transition-all duration-[320ms] translate-x-3 group-hover:-translate-x-1">
                 Lebih Banyak
               </p>
