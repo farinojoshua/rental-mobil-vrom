@@ -5,7 +5,7 @@
     <div class="container relative py-[100px]">
       <header class="mb-[30px]">
         <h2 class="font-bold text-dark text-[26px] mb-1">
-          Cara Penyewaan
+          Cara Sewa
         </h2>
       </header>
 
