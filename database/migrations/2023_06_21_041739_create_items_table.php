@@ -13,20 +13,15 @@ return new class extends Migration
     {
         Schema::create('items', function (Blueprint $table) {
             $table->id();
-
             $table->string('name');
             $table->string('slug')->unique();
-
             $table->foreignId('type_id')->constrained();
             $table->foreignId('brand_id')->constrained();
-
             $table->text('photos')->nullable();
             $table->text('features')->nullable();
-
             $table->integer('price')->default(0);
             $table->double('star')->default(0);
             $table->integer('review')->default(0);
-
             $table->timestamps();
         });
     }

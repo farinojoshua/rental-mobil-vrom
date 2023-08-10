@@ -62,7 +62,7 @@
       <div class="mb-10">
         <a href="{{ route('admin.items.create') }}"
            class="px-4 py-2 font-bold text-white bg-green-500 rounded shadow-lg hover:bg-green-700">
-          + Buat Item
+          + Tambah Item
         </a>
       </div>
       <div class="overflow-hidden shadow sm:rounded-md">

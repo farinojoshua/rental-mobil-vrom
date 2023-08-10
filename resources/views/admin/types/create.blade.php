@@ -5,7 +5,7 @@
       <a href="#!" onclick="window.history.go(-1); return false;">
         ←
       </a>
-      {!! __('Type &raquo; Buat') !!}
+      {!! __('Type &raquo; Tambah') !!}
     </h2>
   </x-slot>
 

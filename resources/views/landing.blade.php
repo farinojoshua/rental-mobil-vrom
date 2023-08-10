@@ -1,7 +1,7 @@
 <x-front-layout>
   <!-- Hero -->
   <section class="container relative pb-[100px] pt-[30px]">
-    <div class="flex flex-col items-center justify-center gap-[30px]">
+    <div class="flex flex-col lg:flex-row items-center justify-center gap-[30px]">
       <!-- Preview Image -->
       <div class="relative">
         <div class="absolute z-0 hidden lg:block">
@@ -18,50 +18,20 @@
              data-aos-delay="950">
       </div>
 
-      <div class="flex flex-col lg:flex-row items-center justify-around lg:gap-[60px] gap-7">
+      <div class="flex flex-col items-center justify-around lg:gap-[60px] gap-7">
         <!-- Car Details -->
         <div class="flex items-center gap-y-12">
           <div class="flex flex-col items-center gap-[2px] px-3 md:px-10" data-aos="fade-left" data-aos-delay="1400">
             <h6 class="font-bold text-dark text-xl md:text-[26px] text-center">
-              380
+               Bersiap untuk Petualangan Tanpa Batas!
             </h6>
-            <p class="text-sm font-normal text-center md:text-base text-secondary">
-              Horse Power
-            </p>
-          </div>
-          <span class="vr" data-aos="fade-left" data-aos-delay="1600"></span>
-          <div class="flex flex-col items-center gap-[2px] px-3 md:px-10" data-aos="fade-left" data-aos-delay="1900">
-            <h6 class="font-bold text-dark text-xl md:text-[26px] text-center">
-              12S
-            </h6>
-            <p class="text-sm font-normal text-center md:text-base text-secondary">
-              Speed AT
-            </p>
-          </div>
-          <span class="vr" data-aos="fade-left" data-aos-delay="2100"></span>
-          <div class="flex flex-col items-center gap-[2px] px-3 md:px-10" data-aos="fade-left" data-aos-delay="2400">
-            <h6 class="font-bold text-dark text-xl md:text-[26px] text-center">
-              AWD
-            </h6>
-            <p class="text-sm font-normal text-center md:text-base text-secondary">
-              Drive
-            </p>
-          </div>
-          <span class="vr" data-aos="fade-left" data-aos-delay="2600"></span>
-          <div class="flex flex-col items-center gap-[2px] px-3 md:px-10" data-aos="fade-left" data-aos-delay="2900">
-            <h6 class="font-bold text-dark text-xl md:text-[26px] text-center">
-              A.I
-            </h6>
-            <p class="text-sm font-normal text-center md:text-base text-secondary">
-              Tracking
-            </p>
           </div>
         </div>
         <!-- Button Primary -->
         <div class="p-1 rounded-full bg-primary group" data-aos="zoom-in" data-aos-delay="3400">
-          <a href="#popularCars" class="btn-primary">
+          <a href="{{ route('front.catalog') }}" class="btn-primary">
             <p class="transition-all duration-[320ms] translate-x-3 group-hover:-translate-x-1">
-              Sewa Sekarang
+              Cari Mobil
             </p>
             <img src="/svgs/ic-arrow-right.svg"
                  class="opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-[320ms]"
@@ -77,7 +47,7 @@
     <div class="container relative py-[100px]">
       <header class="mb-[30px]">
         <h2 class="font-bold text-dark text-[26px] mb-1">
-          Mobil Terpopuler
+          Mobil
         </h2>
         <p class="text-base text-secondary">Mulai Sekarang!</p>
       </header>
@@ -129,14 +99,14 @@
   <!-- Extra Benefits -->
   <section class="container relative pt-[100px]">
     <div class="flex items-center flex-col md:flex-row flex-wrap justify-center gap-8 lg:gap-[120px]">
-      <img src="/images/illustration-01.webp" class="w-full lg:max-w-[536px]" alt="">
+      <img src="/images/review.svg" class="w-full lg:max-w-[536px]" alt="">
       <div class="max-w-[268px] w-full">
         <div class="flex flex-col gap-[30px]">
           <header>
             <h2 class="font-bold text-dark text-[26px] mb-1">
               Extra Benefits
             </h2>
-            <p class="text-base text-secondary">You drive safety and famous</p>
+            <p class="text-base text-secondary">Mengemudi dengan aman dan nyaman</p>
           </header>
           <!-- Benefits Item -->
           <div class="flex items-center gap-4">
@@ -145,9 +115,9 @@
             </div>
             <div>
               <h5 class="text-lg text-dark font-bold mb-[2px]">
-                Delivery
+                Mobil Terbaik
               </h5>
-              <p class="text-sm font-normal text-secondary">Just sit tight and wait</p>
+              <p class="text-sm font-normal text-secondary">Dapatkan mobil dengan kualitas terbaik</p>
             </div>
           </div>
           <div class="flex items-center gap-4">
@@ -156,9 +126,9 @@
             </div>
             <div>
               <h5 class="text-lg text-dark font-bold mb-[2px]">
-                Pricing
+                Harga
               </h5>
-              <p class="text-sm font-normal text-secondary">12x Pay Installment</p>
+              <p class="text-sm font-normal text-secondary">Dapatkan harga terbaik</p>
             </div>
           </div>
           <div class="flex items-center gap-4">
@@ -167,9 +137,9 @@
             </div>
             <div>
               <h5 class="text-lg text-dark font-bold mb-[2px]">
-                Secure
+                Aman
               </h5>
-              <p class="text-sm font-normal text-secondary">Use your plate number</p>
+              <p class="text-sm font-normal text-secondary">Kami menjamin keamanan data anda</p>
             </div>
           </div>
           <div class="flex items-center gap-4">
@@ -178,9 +148,9 @@
             </div>
             <div>
               <h5 class="text-lg text-dark font-bold mb-[2px]">
-                Fast Trade
+                Kemudahan
               </h5>
-              <p class="text-sm font-normal text-secondary">Change car faster</p>
+              <p class="text-sm font-normal text-secondary">Transaksi dengan mudah dan aman</p>
             </div>
           </div>
         </div>
@@ -198,146 +168,6 @@
             </a>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="container relative py-[100px]">
-    <header class="text-center mb-[50px]">
-      <h2 class="font-bold text-dark text-[26px] mb-1">
-        Pertanyaan Terpopuler
-      </h2>
-      <p class="text-base text-secondary">Pelajari Selengkapnya!</p>
-    </header>
-
-    <!-- Questions -->
-    <div class="grid md:grid-cols-2 gap-x-[50px] gap-y-6 max-w-[910px] w-full mx-auto">
-      <a href="#!" class="px-6 py-4 border rounded-[24px] border-grey h-min accordion max-w-[430px]"
-         id="faq1">
-        <div class="flex items-center justify-between gap-1">
-          <p class="text-base font-semibold text-dark">
-            What if I crash the car?
-          </p>
-          <img src="/svgs/ic-chevron-down-rounded.svg" class="transition-all" alt="">
-        </div>
-        <div class="hidden pt-4 max-w-[335px]" id="faq1-content">
-          <p class="text-base text-dark leading-[26px]">
-            Ipsum top talent busy making race that
-            agreed both party. You can si amet lorem
-            dolor get the rewards after winninng.
-          </p>
-        </div>
-      </a>
-      <a href="#!" class="px-6 py-4 border rounded-[24px] border-grey h-min accordion max-w-[430px]"
-         id="faq2">
-        <div class="flex items-center justify-between gap-1">
-          <p class="text-base font-semibold text-dark">
-            What if I crash the car?
-          </p>
-          <img src="/svgs/ic-chevron-down-rounded.svg" class="transition-all" alt="">
-        </div>
-        <div class="hidden pt-4 max-w-[335px]" id="faq2-content">
-          <p class="text-base text-dark leading-[26px]">
-            Ipsum top talent busy making race that
-            agreed both party. You can si amet lorem
-            dolor get the rewards after winninng.
-          </p>
-        </div>
-      </a>
-      <a href="#!" class="px-6 py-4 border rounded-[24px] border-grey h-min accordion max-w-[430px]"
-         id="faq3">
-        <div class="flex items-center justify-between gap-1">
-          <p class="text-base font-semibold text-dark">
-            What if I crash the car?
-          </p>
-          <img src="/svgs/ic-chevron-down-rounded.svg" class="transition-all" alt="">
-        </div>
-        <div class="hidden pt-4 max-w-[335px]" id="faq3-content">
-          <p class="text-base text-dark leading-[26px]">
-            Ipsum top talent busy making race that
-            agreed both party. You can si amet lorem
-            dolor get the rewards after winninng.
-          </p>
-        </div>
-      </a>
-      <a href="#!" class="px-6 py-4 border rounded-[24px] border-grey h-min accordion max-w-[430px]"
-         id="faq4">
-        <div class="flex items-center justify-between gap-1">
-          <p class="text-base font-semibold text-dark">
-            What if I crash the car?
-          </p>
-          <img src="/svgs/ic-chevron-down-rounded.svg" class="transition-all" alt="">
-        </div>
-        <div class="hidden pt-4 max-w-[335px]" id="faq4-content">
-          <p class="text-base text-dark leading-[26px]">
-            Ipsum top talent busy making race that
-            agreed both party. You can si amet lorem
-            dolor get the rewards after winninng.
-          </p>
-        </div>
-      </a>
-      <a href="#!" class="px-6 py-4 border rounded-[24px] border-grey h-min accordion max-w-[430px]"
-         id="faq5">
-        <div class="flex items-center justify-between gap-1">
-          <p class="text-base font-semibold text-dark">
-            What if I crash the car?
-          </p>
-          <img src="/svgs/ic-chevron-down-rounded.svg" class="transition-all" alt="">
-        </div>
-        <div class="hidden pt-4 max-w-[335px]" id="faq5-content">
-          <p class="text-base text-dark leading-[26px]">
-            Ipsum top talent busy making race that
-            agreed both party. You can si amet lorem
-            dolor get the rewards after winninng.
-          </p>
-        </div>
-      </a>
-      <a href="#!" class="px-6 py-4 border rounded-[24px] border-grey h-min accordion max-w-[430px]"
-         id="faq6">
-        <div class="flex items-center justify-between gap-1">
-          <p class="text-base font-semibold text-dark">
-            What if I crash the car?
-          </p>
-          <img src="/svgs/ic-chevron-down-rounded.svg" class="transition-all" alt="">
-        </div>
-        <div class="hidden pt-4 max-w-[335px]" id="faq6-content">
-          <p class="text-base text-dark leading-[26px]">
-            Ipsum top talent busy making race that
-            agreed both party. You can si amet lorem
-            dolor get the rewards after winninng.
-          </p>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <!-- Instant Booking -->
-  <section class="relative bg-[#060523]">
-    <div class="container py-20">
-      <div class="flex flex-col">
-        <header class="mb-[50px] max-w-[360px] w-full">
-          <h2 class="font-bold text-white text-[26px] mb-4">
-            Drive Yours Today. <br>
-            Drive Faster.
-          </h2>
-          <p class="text-base text-subtlePars">Get an instant booking to catch up whatever your
-            really want to achieve today, yes.</p>
-        </header>
-        <!-- Button Primary -->
-        <div class="p-1 rounded-full bg-primary group w-max">
-          <a href="#popularCars" class="btn-primary">
-            <p class="transition-all duration-[320ms] translate-x-3 group-hover:-translate-x-1">
-              Pesan Sekarang
-            </p>
-            <img src="/svgs/ic-arrow-right.svg"
-                 class="opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-[320ms]"
-                 alt="">
-          </a>
-        </div>
-      </div>
-      <div class="absolute bottom-[-30px] right-0 lg:w-[764px] max-h-[332px] hidden lg:block">
-        <img src="/images/fortuners.png" alt="">
       </div>
     </div>
   </section>
