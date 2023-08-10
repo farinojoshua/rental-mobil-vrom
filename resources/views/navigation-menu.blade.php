@@ -5,9 +5,9 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="flex items-center shrink-0">
-                    <a href="{{ route('admin.dashboard') }}">
-                        <x-application-mark class="block w-auto h-9" />
-                    </a>
+                     <a href="{{ route('admin.dashboard') }}">
+            <img src="/svgs/logo1.svg" alt="stream" />
+          </a>
                 </div>
 
                 <!-- Navigation Links -->

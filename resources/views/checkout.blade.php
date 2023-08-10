@@ -20,11 +20,11 @@
             <!-- Full Name -->
             <div class="flex flex-col col-span-2 gap-3">
               <label for="" class="text-base font-semibold text-dark">
-                Full Name
+                Nama Lengkap
               </label>
               <input type="text" name="name" id="fullname" required
                      class="text-base font-medium focus:border-primary focus:outline-none placeholder:text-secondary placeholder:font-normal px-[26px] py-4 border border-grey rounded-[50px]"
-                     placeholder="Insert Full Name" value="{{ Auth::user()->name }}">
+                     placeholder="Masukkan Nama Lengkap" value="{{ Auth::user()->name }}">
             </div>
 
             <!-- RESULT DATES FROM-UNTIL -->
@@ -32,20 +32,20 @@
               <!-- Result Date From [HIDDEN] -->
               <div class="flex flex-col col-span-1 gap-3">
                 <label for="" class="text-base font-semibold text-dark">
-                  From (result)
+                  Dari (result)
                 </label>
                 <input type="text" name="start_date" id="dateFrom" required
                        class="text-base font-medium focus:border-primary focus:outline-none placeholder:text-secondary placeholder:font-normal px-[26px] py-4 border border-grey rounded-[50px] focus:before:appearance-none focus:before:!content-none"
-                       placeholder="Select Date" readonly x-model="dateFromYmd">
+                       placeholder="Pilih Tanggal" readonly x-model="dateFromYmd">
               </div>
               <!-- Result Date Until [HIDDEN] -->
               <div class="flex flex-col col-span-1 gap-3">
                 <label for="" class="text-base font-semibold text-dark">
-                  Until (result)
+                  Sampai (result)
                 </label>
                 <input type="text" name="end_date" id="dateUntil" required
                        class="text-base font-medium focus:border-primary focus:outline-none placeholder:text-secondary placeholder:font-normal px-[26px] py-4 border border-grey rounded-[50px] focus:before:appearance-none focus:before:!content-none"
-                       placeholder="Select Date" readonly x-model="dateToYmd">
+                       placeholder="Pilih Tanggal" readonly x-model="dateToYmd">
               </div>
             </div>
 
@@ -55,21 +55,21 @@
               <!-- Date From -->
               <div class="flex flex-col col-span-1 gap-3">
                 <label for="" class="text-base font-semibold text-dark">
-                  From
+                  Dari
                 </label>
                 <input readonly type="text"
                        class="text-base font-medium focus:border-primary focus:outline-none placeholder:text-secondary placeholder:font-normal px-[26px] py-4 border border-grey rounded-[50px] focus:before:appearance-none focus:before:!content-none"
-                       placeholder="Select Date" @click="endToShow = 'from'; init(); showDatepicker = true"
+                       placeholder="Pilih Tanggal" @click="endToShow = 'from'; init(); showDatepicker = true"
                        x-model="outputDateFromValue">
               </div>
               <!-- Date Until -->
               <div class="flex flex-col col-span-1 gap-3">
                 <label for="" class="text-base font-semibold text-dark">
-                  Until
+                  Sampai
                 </label>
                 <input readonly type="text"
                        class="text-base font-medium focus:border-primary focus:outline-none placeholder:text-secondary placeholder:font-normal px-[26px] py-4 border border-grey rounded-[50px] focus:before:appearance-none focus:before:!content-none"
-                       placeholder="Select Date" @click="endToShow = 'to'; init(); showDatepicker = true"
+                       placeholder="Pilih Tanggal" @click="endToShow = 'to'; init(); showDatepicker = true"
                        x-model="outputDateToValue">
               </div>
 
@@ -140,31 +140,31 @@
             <!-- Delivery Address -->
             <div class="flex flex-col col-span-2 gap-3">
               <label for="" class="text-base font-semibold text-dark">
-                Delivery Address
+               Alamat
               </label>
               <input type="text" name="address" id="address" required
                      class="text-base font-medium focus:border-primary focus:outline-none placeholder:text-secondary placeholder:font-normal px-[26px] py-4 border border-grey rounded-[50px]"
-                     placeholder="Where should we deliver your car?">
+                     placeholder="Alamat Lengkap">
             </div>
 
             <!-- City -->
             <div class="flex flex-col col-span-1 gap-3">
               <label for="" class="text-base font-semibold text-dark">
-                City
+                Kota
               </label>
               <input type="text" name="city" id="city" required
                      class="text-base font-medium focus:border-primary focus:outline-none placeholder:text-secondary placeholder:font-normal px-[26px] py-4 border border-grey rounded-[50px] focus:before:appearance-none focus:before:!content-none"
-                     placeholder="City Name">
+                     placeholder="Nama Kota">
             </div>
 
             <!-- Post Code -->
             <div class="flex flex-col col-span-1 gap-3">
               <label for="" class="text-base font-semibold text-dark">
-                Write Code
+                Kode POS
               </label>
               <input type="number" name="zip" id="postCode" required
                      class="text-base font-medium focus:border-primary focus:outline-none placeholder:text-secondary placeholder:font-normal px-[26px] py-4 border border-grey rounded-[50px] focus:before:appearance-none focus:before:!content-none"
-                     placeholder="Write code">
+                     placeholder="Tulis Kode">
             </div>
 
             <!-- CTA Button -->
@@ -173,7 +173,7 @@
               <div class="p-1 rounded-full bg-primary group">
                 <a href="#!" class="btn-primary" id="checkoutButton">
                   <p>
-                    Continue
+                    Lanjutkan
                   </p>
                   <img src="/svgs/ic-arrow-right.svg" alt="">
                 </a>

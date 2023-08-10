@@ -28,9 +28,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::name('front.')->group(function () {
     Route::get('/', [LandingController::class, 'index'])->name('index');
-    Route::get('/catalog', [CatalogController::class, 'index'])->name('catalog');
-    Route::get('/catalog/{slug}', [CatalogController::class, 'type'])->name('catalog.detail');
-    Route::get('/howto', [HowToController::class, 'index'])->name('howto');
+    Route::get('/mobil', [CatalogController::class, 'index'])->name('catalog');
+    Route::get('/mobil/{slug}', [CatalogController::class, 'type'])->name('catalog.detail');
+    Route::get('/faq', [HowToController::class, 'index'])->name('howto');
     Route::get('/bookings', [BookingsController::class, 'index'])->name('bookings');
     Route::get('/detail/{slug}', [DetailController::class, 'index'])->name('detail');
 
