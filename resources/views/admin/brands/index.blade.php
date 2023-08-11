@@ -48,7 +48,7 @@
       <div class="mb-10">
         <a href="{{ route('admin.brands.create') }}"
            class="px-4 py-2 font-bold text-white bg-green-500 rounded shadow-lg hover:bg-green-700">
-          + Tambah Brand
+          + Tambah Brands
         </a>
       </div>
       <div class="overflow-hidden shadow sm:rounded-md">
